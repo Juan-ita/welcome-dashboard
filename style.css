@@ -1,0 +1,199 @@
+/* General Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(135deg, purple, white, rgb(92, 92, 250)); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px; 
+}
+
+/* Central Card Layout */
+.card-container {
+    background-color: whitesmoke;
+    padding: 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15); 
+    max-width: 450px; 
+    width: 100%;
+}
+
+/* Header Section */
+.text-center { 
+    text-align: center; 
+}
+
+.main-title {
+    font-weight: 800; 
+    font-size: 36px; 
+    color: darkslateblue; 
+}
+
+.subtitle {
+    font-size: 12px; 
+    color: gray; 
+    margin-top: 4px; 
+    margin-bottom: 24px; 
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 16px; 
+}
+
+.form-label {
+    display: block;
+    font-size: 14px; 
+    font-weight: 600; 
+    color: black; 
+    margin-bottom: 4px; 
+}
+
+.form-input {
+    border: 2px solid mediumpurple; 
+    border-radius: 8px; 
+    padding: 8px 16px; 
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: darkblue;
+}
+
+/* Primary Form Button */
+.btn-primary {
+    background-color: darkblue; 
+    color: white;
+    width: 100%;
+    padding: 12px 0; 
+    border-radius: 12px; 
+    font-weight: 700; 
+    font-size: 20px; 
+    cursor: pointer;
+    border: none;
+    margin-top: 20px; 
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: navy; 
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid gray; 
+    margin: 24px 0; 
+}
+
+/* Dashboard Blocks */
+.dashboard-block {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    margin-bottom: 16px; 
+}
+
+.bg-indigo-box {
+    background-color: lavender; 
+    border-color: lightsteelblue; 
+}
+
+.greeting-text {
+    font-size: 20px; 
+    font-weight: 700; 
+    color: darkblue; 
+}
+
+.bg-emerald-box {
+    background-color: mintcream; 
+    border-color: lightgreen; 
+}
+
+.label-emerald {
+    font-size: 14px; 
+    color: darkgreen; 
+    font-weight: 500; 
+}
+
+.val-emerald {
+    font-size: 24px; 
+    font-weight: 900; 
+    color: green; 
+}
+
+.bg-amber-box {
+    background-color: floralwhite; 
+    border-color: wheat; 
+}
+
+.label-amber {
+    font-size: 12px; 
+    font-weight: 700; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    color: darkgoldenrod; 
+    margin-bottom: 8px; 
+}
+
+.quote-list-style {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 14px; 
+    color: saddlebrown; 
+    font-style: italic; 
+}
+
+/* Clear Information Utility Link */
+.btn-clear {
+    width: 100%;
+    font-size: 12px; 
+    color: gray; 
+    background: none;
+    border: none;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin-top: 16px; 
+    transition: color 0.2s ease;
+}
+
+.btn-clear:hover {
+    color: red; 
+}
+
+/* JavaScript Dynamic Logic State Class Modifiers */
+.hidden {
+    display: none !important;
+}
+
+.status-granted {
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid green; 
+    font-weight: 600;
+    font-size: 14px;
+    background-color: honeydew; 
+    color: darkgreen;            
+    margin-bottom: 16px; 
+}
+
+.status-restricted {
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid red; 
+    font-weight: 600;
+    font-size: 14px;
+    background-color: mistyrose; 
+    color: darkred;            
+    margin-bottom: 16px; 
+}

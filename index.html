@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="card-container space-y-6">
+        <header class="text-center">
+            <h1 class="main-title">Welcome Hub</h1>
+            <p class="subtitle">Let's personalize your experience</p>
+        </header>
+
+        <form id="user_form" class="space-y-4">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="age" class="form-label">Your Age</label>
+                <input type="number" id="age" required min="1" max="120" placeholder="Enter your age" class="form-input">
+            </div>
+            <button type="submit" class="btn-primary">Save & Display</button>
+        </form>
+
+        <hr class="divider">
+
+        <div id="dashboard_content" class="hidden space-y-4" style="display: none;">
+            <div class="dashboard-block bg-indigo-box">
+                <h2 id="greetings" class="greeting-text"></h2>
+            </div>
+            
+            <div class="dashboard-block bg-emerald-box">
+                <p class="label-emerald">Your Age in Months:</p>
+                <p id="age_in_months" class="val-emerald"></p>
+            </div>
+
+            <div id="age_status_box">
+                <p id="age_status_message"></p>
+            </div>
+
+            <div class="dashboard-block bg-amber-box">
+                <p class="label-amber">Daily Motivation:</p>
+                <ul id="quote_list" class="space-y-2 quote-list-style"></ul>
+            </div>
+
+            <button id="clear_btn" class="btn-clear">
+                Clear Stored Information
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
